@@ -10,6 +10,5 @@
     <FileAlignment>512</FileAlignment>
     <TargetFramework>net5.0-windows</TargetFramework>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
-    <UseWPF>true</UseWPF>
   </PropertyGroup>
 </Project>
