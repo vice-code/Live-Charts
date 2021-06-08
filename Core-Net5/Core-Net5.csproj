@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A3958160-B3B8-42DD-90CF-9929D301CE9E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiveCharts</RootNamespace>
+    <AssemblyName>LiveCharts</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+</Project>
