@@ -1,0 +1,22 @@
+﻿<Window x:Class="Wpf_Net5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:lc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        xmlns:local="clr-namespace:Wpf_Net5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <lc:CartesianChart Series="{Binding Series}" LegendLocation="Bottom">
+            <lc:CartesianChart.AxisX>
+                <lc:Axis LabelFormatter="{Binding Formatter}">
+                    <lc:Axis.Separator>
+                        <lc:Separator Step=".2"/>
+                    </lc:Axis.Separator>
+                </lc:Axis>
+
+            </lc:CartesianChart.AxisX>
+        </lc:CartesianChart>
+    </Grid>
+</Window>
