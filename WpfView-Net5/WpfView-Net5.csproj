@@ -11,6 +11,7 @@
     <WarningLevel>4</WarningLevel>
     <TargetFramework>net5.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
+    <Configurations>Debug;Release;Debug-Local-Ref</Configurations>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>false</SignAssembly>
@@ -23,6 +24,7 @@
     <DelaySign>false</DelaySign>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Core-Net5\Core-Net5.csproj" />
+    <ProjectReference Condition="'$(Configuration)' == 'Debug-Local-Ref'" Include="..\Core-Net5\Core-Net5.csproj" />
+    <PackageReference Condition="'$(Configuration)' != 'Debug-Local-Ref'" Include="ViceCode.LiveCharts.Core" Version="1.1.1.2" />
   </ItemGroup>
 </Project>

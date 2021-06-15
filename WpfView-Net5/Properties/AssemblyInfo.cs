@@ -7,8 +7,8 @@ using System.Windows;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyDescription("LiveCharts view for wpf")]
-[assembly: AssemblyCopyright("Copyright © 2016 Alberto Rodríguez Orozco")]
+//[assembly: AssemblyDescription("LiveCharts view for wpf")]
+//[assembly: AssemblyCopyright("Copyright © 2016 Alberto Rodríguez Orozco")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

@@ -10,5 +10,6 @@
     <FileAlignment>512</FileAlignment>
     <TargetFramework>net5.0-windows</TargetFramework>
     <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <Configurations>Debug;Release;Debug-Local-Ref</Configurations>
   </PropertyGroup>
 </Project>

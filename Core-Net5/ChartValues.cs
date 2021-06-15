@@ -170,6 +170,7 @@ namespace LiveCharts
             var config = GetConfig(seriesView);
 
             var isClass = typeof(T).IsClass;
+#pragma warning disable CS0618 // Type or member is obsolete
             var isObservable = isClass && typeof(IObservableChartPoint).IsAssignableFrom(typeof(T));
             var notifies = isClass && typeof(INotifyPropertyChanged).IsAssignableFrom(typeof(T));
 
@@ -182,6 +183,7 @@ namespace LiveCharts
                 if (isObservable)
                 {
                     var observable = (IObservableChartPoint) value;
+#pragma warning restore CS0618 // Type or member is obsolete
                     if (observable != null)
                     {
                         observable.PointChanged -= ObservableOnPointChanged;
