@@ -214,8 +214,10 @@ namespace LiveCharts
         public static double GetUnitWidth(AxisOrientation source, ChartCore chart, AxisCore axis)
         {
             double min;
+#pragma warning disable CS0612 // Type or member is obsolete
             double u = !double.IsNaN(axis.View.BarUnit)
                     ? axis.View.BarUnit
+#pragma warning restore CS0612 // Type or member is obsolete
                     : (!double.IsNaN(axis.View.Unit)
                         ? axis.View.Unit
                         : 1);

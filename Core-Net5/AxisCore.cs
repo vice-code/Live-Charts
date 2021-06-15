@@ -289,6 +289,7 @@ namespace LiveCharts
 
             InitializeGarbageCollector();
 
+#pragma warning disable CS0612 // Type or member is obsolete
             var m = !double.IsNaN(View.BarUnit)
                 ? View.BarUnit
                 : (!double.IsNaN(View.Unit)
@@ -297,6 +298,7 @@ namespace LiveCharts
 
             var u = !double.IsNaN(View.BarUnit)
                 ? View.BarUnit
+#pragma warning restore CS0612 // Type or member is obsolete
                 : (!double.IsNaN(View.Unit)
                     ? View.Unit
                     : 1);
