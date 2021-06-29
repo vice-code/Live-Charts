@@ -42,11 +42,7 @@
         <wpf:ChartPointLabelConverter x:Key="ChartPointLabelConverter"/>
         <wpf:ParticipationVisibilityConverter x:Key="ParticipationVisibilityConverter"/>
         <BooleanToVisibilityConverter x:Key="Bvc"></BooleanToVisibilityConverter>
-        <CollectionViewSource x:Key="GroupedPoints" Source="{Binding Data.Points}" >
-            <CollectionViewSource.GroupDescriptions>
-                <PropertyGroupDescription PropertyName="ChartPoint.SeriesView.Grouping" />
-            </CollectionViewSource.GroupDescriptions>
-        </CollectionViewSource>
+        <CollectionViewSource x:Key="GroupedPoints" Source="{Binding Data.Points}"/>
     </UserControl.Resources>
     <UserControl.Template>
         <ControlTemplate>
@@ -99,7 +95,7 @@
                                         <TextBlock Grid.Column="3" Text="{Binding ChartPoint.Participation, StringFormat={}{0:P}}" 
                                                VerticalAlignment="Center" Margin="5 0 0 0"
                                                Visibility="{Binding DataContext.Data, RelativeSource={RelativeSource  FindAncestor, 
-                                                                                                    AncestorType={x:Type StackPanel}}, 
+                                                                                                    AncestorType={x:Type ItemsControl}}, 
                                                                     Converter={StaticResource ParticipationVisibilityConverter}}"/>
                                     </Grid>
                                 </DataTemplate>
